@@ -1,0 +1,75 @@
+.patient-details-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 400px;
+}
+
+.feedback-image {
+  margin-top: 20px;
+}
+.feedback-image img {
+  width: 350px;
+}
+
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.patient-form label,
+.patient-form input {
+  margin-bottom: 10px;
+}
+
+.message {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .message {
+    display: block;
+    margin-top: 20px;
+  }
+  .feedback-image {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .patient-form {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .feedback-image {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .patient-details-container {
+    flex-direction: column;
+  }
+}
+
+.MuiInputBase-root{
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+    background-color: #69be05;
+}
